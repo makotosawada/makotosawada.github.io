@@ -1,6 +1,6 @@
 # Makoto Sawada
 
-**This is Makoto Sawada (澤田 真理)’s web page.**
+**Hello, this is Makoto Sawada (澤田 真理)’s web page.**
 
 ## Welcome
 
