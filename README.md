@@ -4,9 +4,10 @@
 
 ## Welcome
 
-- I am an astrophysicist (宇宙物理学者), currently appointed at [High Energy Astrophysics Laboratory](https://astro.riken.jp/?lang=en), Cluster for Pioneering Research (CRP: 開拓研究本部), RIKEN (理化学研究所), Japan, as a Research Scientist (研究員) for the RIKEN Pioneering Project “Evolution of Matter in the Universe” ([r-EMU](http://stars.riken.jp/remu/index.html)) since 2020. 
-- Previously I was appointed as an Assistant Research Scientist at University of Maryland Baltimore County (UMBC), MD, USA, for about two years, through the Center for Research and Exploration in Space Science and Technology II ([CRESST II](https://cresst2.umd.edu/)) program, a collaboration with NASA Goddard Space Flight Center (GSFC), MD, USA. While I was at GSFC/UMBC, I was also appointed as a Visiting Scientist at Lawrence Livermore National Laboratory (LLNL), CA, USA. 
-- Prior to these appointments, I worked at Aoyama Gakuin University (青山学院大学) as an Assistant Professor (助教) for five years and half after I got my PhD from Kyoto University in 2012.
+- I am an astrophysicist, currently appointed at Department of Physics, Faculty of Science, Rikkyo University, Japan, as an Assistant Professor.
+- I was formerly appointed at [High Energy Astrophysics Laboratory](https://astro.riken.jp/?lang=en), Cluster for Pioneering Research (CRP), RIKEN, Japan, as a Research Scientist for the RIKEN Pioneering Project “Evolution of Matter in the Universe” ([r-EMU](http://stars.riken.jp/remu/index.html)) since 2020. 
+- Until 2019, I was appointed as an Assistant Research Scientist at University of Maryland Baltimore County (UMBC), MD, USA, through the Center for Research and Exploration in Space Science and Technology II ([CRESST II](https://cresst2.umd.edu/)) program, a collaboration with NASA Goddard Space Flight Center (GSFC), MD, USA. While I was at GSFC/UMBC, I was also a Visiting Scientist at Lawrence Livermore National Laboratory (LLNL), CA, USA. 
+- Prior to these appointments, I worked at Aoyama Gakuin University as an Assistant Professor for five years and half after I got my PhD from Kyoto University in 2012.
 
 ## Research interests
 
