@@ -4,7 +4,7 @@
 
 ## Welcome
 
-- I am an astrophysicist, currently appointed at Department of Physics, Faculty of Science, Rikkyo University, Japan, as an Assistant Professor.
+- I am an astrophysicist, currently appointed at [Department of Physics](https://www.rikkyo.ac.jp/undergraduate/science/department_02.html), [Faculty of Science](https://www.rikkyo.ac.jp/undergraduate/science/), [Rikkyo University](https://www.rikkyo.ac.jp/), Japan, as an Assistant Professor.
 - I was formerly appointed at [High Energy Astrophysics Laboratory](https://astro.riken.jp/?lang=en), Cluster for Pioneering Research (CRP), RIKEN, Japan, as a Research Scientist for the RIKEN Pioneering Project “Evolution of Matter in the Universe” ([r-EMU](http://stars.riken.jp/remu/index.html)) since 2020. 
 - Until 2019, I was appointed as an Assistant Research Scientist at University of Maryland Baltimore County (UMBC), MD, USA, through the Center for Research and Exploration in Space Science and Technology II ([CRESST II](https://cresst2.umd.edu/)) program, a collaboration with NASA Goddard Space Flight Center (GSFC), MD, USA. While I was at GSFC/UMBC, I was also a Visiting Scientist at Lawrence Livermore National Laboratory (LLNL), CA, USA. 
 - Prior to these appointments, I worked at Aoyama Gakuin University as an Assistant Professor for five years and half after I got my PhD from Kyoto University in 2012.
@@ -12,7 +12,7 @@
 ## Research interests
 
 - My research interests are non-equilibrium phenomena in various hot (>10<sup>7</sup> K) medium in the Universe such as supernova remnants, and in association, the instrumentation for X-ray spectroscopy of such hot plasma. 
-- A significant part of my research activity is currently devoted into the development of the Resolve high-resolution spectrometer on the X-ray Imaging and Spectroscopy Mission ([XRISM](https://xrism.isas.jaxa.jp/en/): X線撮像分光衛星). XRISM is an international project between Japan and US with a participation of Europa, which is scheduled to be launched soon. XRISM is expected to revolutionalize our understanding on high-energy astrophysical objects such as supernova remnants, clusters of galaxies, and blackholes. 
+- A significant part of my research activity is currently devoted into the development of the Resolve high-resolution spectrometer on the X-ray Imaging and Spectroscopy Mission ([XRISM](https://xrism.isas.jaxa.jp/en/): X線撮像分光衛星). XRISM is an international project between Japan and US with a participation of Europa, [which was launched on September 7, 2023](https://www.mhi.com/news/230907.html). XRISM is expected to revolutionalize our understanding on high-energy astrophysical objects such as supernova remnants, clusters of galaxies, and blackholes. 
 - The observational data to be obtained with XRISM/Resolve will be so precise and detailed that we are required to refine spectral models to get accurate interpretation of the data. For this purpose, I participate in the LLNL-GSFC laboratory astrophysics collaboration to simulate astrophysical hot and non-equilibrium plasma in a controlled laboratory setting using Electron Beam Ion Traps ([EBIT](https://ebit.llnl.gov/)). 
 - I also occasionally contribute to updating X-ray spectral models such as [SPEX](https://www.sron.nl/astrophysics-spex) developed at SRON, the Netherlands.
 
