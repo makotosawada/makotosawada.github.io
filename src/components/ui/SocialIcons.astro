@@ -95,4 +95,12 @@ const calculatedContainerSize = activeSocial.length <= 5 ? 'size-12' : activeSoc
 			<Researchmap class={calculatedIconSize} fill="currentColor" />
 		</a>
 	}
+{social.ads && (
+  <a href={social.ads} target="_blank" title="NASA ADS Publications" class={`${calculatedContainerSize} ...`}>
+    <svg viewBox="0 0 640 640" class={calculatedIconSize}>
+       <path fill="currentColor" d="M112 112v416h416V112H112zm328 328H200V200h240v240z" />
+    </svg>
+  </a>
+)}
+
 </div>
