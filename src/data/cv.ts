@@ -1,11 +1,39 @@
 export const experiences = [
 	{
-		company: '',
-		time: '',
-		title: '',
+		company: 'Rikkyo University',
+		time: 'Apr 2023 - present',
+		title: 'Assistant Professor',
 		location: '',
 		description: '',
 	},
+	{
+		company: 'RIKEN',
+		time: 'Jan 2020 - Mar 2023',
+		title: 'Research Scientist',
+		location: '',
+		description: '',
+	},
+	{
+		company: 'NASA/GSFC and UMBC/CSST',
+		time: 'Oct 2017 - Dec 2019',
+		title: 'Assistant Research Scientist',
+		location: '',
+		description: '',
+	},
+	{
+		company: 'Aoyama Gakuin University',
+		time: 'Apr 2013 - Sep 2017',
+		title: 'Assistant Professor',
+		location: '',
+		description: '',
+	},	
+	{
+		company: 'Aoyama Gakuin University',
+		time: 'Apr 2012 - Mar 2013',
+		title: 'Research Associate',
+		location: '',
+		description: '',
+	},	
 	// {
 	// 	company: 'Radium Institute (Institut du Radium)',
 	// 	time: '1914 - 1934',
