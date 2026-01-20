@@ -1,4 +1,4 @@
 <svg xmlns="http://www.w3.org" width="640" height="640" viewBox="0 0 640 640">
-  <rect x="80" y="80" width="480" height="480" rx="64" fill="none" stroke="inherit" stroke-width="40"></rect>
-  <path d="M260 210 L420 320 L260 430 Z" fill="inherit"></path>
+  <rect x="80" y="80" width="480" height="480" rx="64" fill="none" stroke="currentColor" stroke-width="40"></rect>
+  <path d="M260 210 L420 320 L260 430 Z" fill="currentColor"></path>
 </svg>
