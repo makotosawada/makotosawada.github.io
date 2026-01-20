@@ -45,9 +45,23 @@ export const experiences = [
 
 export const education = [
 	{
-		school: '',
-		time: '',
-		degree: '',
+		school: 'Department of Physics and Astrophysics, Kyoto University',
+		time: 'Apr 2009 - Mar 2012',
+		degree: 'PhD (Science)',
+		location: '',
+		description: '',
+	},
+	{
+		school: 'Department of Physics and Astrophysics, Kyoto University',
+		time: 'Apr 2007 - Mar 2009',
+		degree: 'MSc',
+		location: '',
+		description: '',
+	},
+	{
+		school: 'Faculty of Science, Kyoto University',
+		time: 'Apr 2003 - Mar 2007',
+		degree: 'BSc',
 		location: '',
 		description: '',
 	},
