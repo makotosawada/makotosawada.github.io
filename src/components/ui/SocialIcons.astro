@@ -10,6 +10,7 @@ import Inspire from '@/assets/social-icons/inspire.svg'
 import Arxiv from '@/assets/social-icons/arxiv.svg'
 import Orcid from '@/assets/social-icons/orcid.svg'
 import Researchmap from '@/assets/social-icons/researchmap.svg'
+import Ads from '@/assets/social-icons/ads.svg'
 
 import { social } from '@/settings'
 
@@ -95,12 +96,10 @@ const calculatedContainerSize = activeSocial.length <= 5 ? 'size-12' : activeSoc
 			<Researchmap class={calculatedIconSize} fill="currentColor" />
 		</a>
 	}
-{social.ads && (
-  <a href={social.ads} target="_blank" title="NASA ADS Publications" class={`${calculatedContainerSize} ...`}>
-    <svg viewBox="0 0 640 640" class={calculatedIconSize}>
-       <path fill="currentColor" d="M112 112v416h416V112H112zm328 328H200V200h240v240z" />
-    </svg>
-  </a>
-)}
-
+<!-- ads -->
+	  {social.ads !== '' &&
+		<a href={social.ads} target="_blank" class={`${calculatedContainerSize} inline-flex items-center justify-center rounded-xl hover:bg-primary/20 transition-all duration-300`}>
+			<Ads class={calculatedIconSize} fill="currentColor" />
+		</a>
+	}
 </div>
