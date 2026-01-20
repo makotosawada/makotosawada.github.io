@@ -45,45 +45,34 @@ const { title, description, image } = Astro.props
 <meta property='twitter:description' content={description} />
 <meta property='twitter:image' content={new URL(image, Astro.url)} />
 
-<!-- 1. Inline script to prevent "Flash of Unstyled Content" (FOUC) on page load -->
-<script is:inline define:vars={{ 
-  defaultLight: template.lightTheme, 
-  defaultDark: template.darkTheme 
-}}>
-  // Function to determine the initial theme
-  const getInitialTheme = () => {
-    // Check if the user has manually selected and saved a theme before
+<!-- Theme Script: Force Emerald (Light) as default, allow manual toggle to Night (Dark) -->
+<script is:inline define:vars={{ defaultLight: template.lightTheme, defaultDark: template.darkTheme }}>
+  const getTheme = () => {
+    // 1. Check for manual preference in localStorage
     const stored = localStorage.getItem('theme');
     if (stored) return stored;
 
-    // If no stored preference, fallback to OS system settings (Dark/Light mode)
-    // and map them to your specified themes from settings.ts
-    return window.matchMedia('(prefers-color-scheme: dark)').matches 
-      ? defaultDark 
-      : defaultLight;
+    // 2. Ignore OS/System settings and always default to your brand color (Emerald)
+    return defaultLight;
   }
 
   const applyTheme = () => {
-    const theme = getInitialTheme();
+    const theme = getTheme();
     document.documentElement.setAttribute('data-theme', theme);
   }
 
-  // Apply the theme immediately
+  // Initial load
   applyTheme();
 
-  // Re-apply the theme logic after Astro's SPA-like page transitions
+  // Re-apply after Astro view transitions
   document.addEventListener('astro:after-swap', applyTheme);
 </script>
 
-<!-- 2. Logic for the theme-toggle button (handles user interaction) -->
+<!-- Keep the theme-change script for the button functionality -->
 <script>
   import { themeChange } from 'theme-change'
-
-  // Initialize the theme-change listener
   themeChange();
-
-  // Re-initialize the listener after Astro view transitions to keep the button functional
   document.addEventListener('astro:after-swap', () => {
-    themeChange(false); // false = do not force-persist the default to localStorage
+    themeChange(false);
   });
 </script>
