@@ -20,6 +20,7 @@ export const social = {
 	inspire: '',
 	arxiv: '',
 	orcid: 'https://orcid.org/0000-0003-2008-6887',
+	researchmap: 'https://researchmap.jp/makoto.sawada',
 }
 
 export const template = {
