@@ -1,7 +1,7 @@
 export interface Experience {
-  company: "Rikkyo University";
-  time: "2023 - present";
-  title: "Assistant Professor";
+  company: string;
+  time: string;
+  title: string;
   location?: string;
   description?: string;
 }
