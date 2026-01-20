@@ -7,11 +7,11 @@ export default {
     plugins: [require("@tailwindcss/typography"), require("daisyui")],
     daisyui: {
         themes: [
+            "emerald",
             "light",
             "dark",
             "cupcake",
             "bumblebee",
-            "emerald",
             "corporate",
             "synthwave",
             "retro",
@@ -41,5 +41,5 @@ export default {
             "sunset",
         ],
     },
-    // darkMode: ['selector', '[data-theme="emerald"]']
+    // darkMode: ['selector', '[data-theme="night"]']
 };
