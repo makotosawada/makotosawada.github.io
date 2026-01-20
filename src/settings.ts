@@ -27,14 +27,14 @@ export const template = {
 	menu_left: false,
 	transitions: true,
 	lightTheme: 'emerald', // Select one of the Daisy UI Themes or create your own
-	darkTheme: 'emerald', // Select one of the Daisy UI Themes or create your own
+	darkTheme: 'night', // Select one of the Daisy UI Themes or create your own
 	excerptLength: 200,
 	postPerPage: 5,
     base: '' // Repository name starting with /
 }
 
 export const seo = {
-	default_title: 'Astro Academia',
-	default_description: 'Astro Academia is a template for academic websites.',
+	default_title: "Makoto Sawada's web page",
+	default_description: 'A personal web page of Makoto Sawada, PhD.',
 	default_image: '/images/astro-academia.png',
 }
