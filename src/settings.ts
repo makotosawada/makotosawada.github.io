@@ -1,6 +1,6 @@
 export const profile = {
 	fullName: 'Makoto Sawada',
-	title: 'Assistant Professor',
+	title: '',
 	institute: 'Rikkyo University',
 	author_name: 'Makoto Sawada', // Author name to be highlighted in the papers section
 	research_areas: [
