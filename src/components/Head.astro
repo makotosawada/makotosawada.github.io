@@ -45,11 +45,6 @@ const { title, description, image } = Astro.props
 <meta property='twitter:description' content={description} />
 <meta property='twitter:image' content={new URL(image, Astro.url)} />
 
----
-// Import the theme definitions from your central settings file
-import { template } from '@/settings';
----
-
 <!-- 1. Inline script to prevent "Flash of Unstyled Content" (FOUC) on page load -->
 <script is:inline define:vars={{ 
   defaultLight: template.lightTheme, 
