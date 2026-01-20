@@ -45,29 +45,50 @@ const { title, description, image } = Astro.props
 <meta property='twitter:description' content={description} />
 <meta property='twitter:image' content={new URL(image, Astro.url)} />
 
-<!-- Theme selector scripts -->
-<script is:inline>
-  // Get stored theme or default to light
-  const getStoredTheme = () => {
-    return localStorage.getItem('theme') || 'light';
+---
+// Import the theme definitions from your central settings file
+import { template } from '@/settings';
+---
+
+<!-- 1. Inline script to prevent "Flash of Unstyled Content" (FOUC) on page load -->
+<script is:inline define:vars={{ 
+  defaultLight: template.lightTheme, 
+  defaultDark: template.darkTheme 
+}}>
+  // Function to determine the initial theme
+  const getInitialTheme = () => {
+    // Check if the user has manually selected and saved a theme before
+    const stored = localStorage.getItem('theme');
+    if (stored) return stored;
+
+    // If no stored preference, fallback to OS system settings (Dark/Light mode)
+    // and map them to your specified themes from settings.ts
+    return window.matchMedia('(prefers-color-scheme: dark)').matches 
+      ? defaultDark 
+      : defaultLight;
   }
 
-  // Apply theme immediately to prevent flash
-  const theme = getStoredTheme();
-  document.documentElement.setAttribute('data-theme', theme);
+  const applyTheme = () => {
+    const theme = getInitialTheme();
+    document.documentElement.setAttribute('data-theme', theme);
+  }
 
-  // Re-apply theme after navigation
-  document.addEventListener('astro:after-swap', () => {
-    const currentTheme = getStoredTheme();
-    document.documentElement.setAttribute('data-theme', currentTheme);
-  });
+  // Apply the theme immediately
+  applyTheme();
+
+  // Re-apply the theme logic after Astro's SPA-like page transitions
+  document.addEventListener('astro:after-swap', applyTheme);
 </script>
-<script>
-	import { themeChange } from 'theme-change'
-	themeChange()
 
-  // Re-initialize after Astro view transitions
+<!-- 2. Logic for the theme-toggle button (handles user interaction) -->
+<script>
+  import { themeChange } from 'theme-change'
+
+  // Initialize the theme-change listener
+  themeChange();
+
+  // Re-initialize the listener after Astro view transitions to keep the button functional
   document.addEventListener('astro:after-swap', () => {
-    themeChange(false); // false = don't persist to localStorage
+    themeChange(false); // false = do not force-persist the default to localStorage
   });
 </script>
