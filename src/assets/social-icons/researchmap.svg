@@ -1,3 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-  <path fill="currentColor" d="M80 80h480v480H80z M266.7 213.3l160 106.7l-160 106.7z" fill-rule="evenodd" />
+<svg xmlns="http://www.w3.org" viewBox="0 0 640 640">
+  <g fill="none" stroke="currentColor" stroke-width="50" stroke-linecap="round" stroke-linejoin="round">
+    <!-- 角を丸めた外側の四角 (rx=50で丸みを指定) -->
+    <rect x="80" y="80" width="480" height="480" rx="50" ry="50" />
+    <!-- 中央の再生ボタン（三角形） -->
+    <path d="M260 210l160 110l-160 110z" />
+  </g>
 </svg>
