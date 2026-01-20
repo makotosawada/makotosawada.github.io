@@ -1,7 +1,7 @@
 export const experiences = [
 	{
 		company: 'Rikkyo University',
-		time: 'Apr 2023 - present',
+		time: 'Apr 2023 - Present',
 		title: 'Assistant Professor',
 		location: '',
 		description: '',
