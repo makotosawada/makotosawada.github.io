@@ -1,21 +1,30 @@
 <svg xmlns="http://www.w3.org" width="640" height="640" viewBox="0 0 640 640">
-  <g fill="none" stroke="currentColor" stroke-width="50" stroke-linecap="round" stroke-linejoin="round">
+  <g fill="none" stroke="currentColor" stroke-width="45" stroke-linecap="round" stroke-linejoin="round">
     <!-- 
-      (1) Further horizontal elongation 
-      (2) 6-vertex clipping for extreme rounding 
+      (1) 水平方向へのさらなる延伸 (x=130 to 580)
+      (2) 各頂点をカットし、ベジェ曲線(Q)で1/5曲率を再現
     -->
-    <path d="M160 180 L160 160 L180 160 L540 310 L540 330 L180 480 L160 480 L160 460 Z" />
+    <path d="
+      M 130,190 
+      L 130,450 
+      Q 130,500 170,485 
+      L 540,345 
+      Q 580,330 580,310
+      Q 580,290 540,275
+      L 170,135 
+      Q 130,120 130,170 
+      Z" />
     
-    <!-- (3) Larger 'rm' (scaled up 2.5x) -->
+    <!-- (3) 小文字'rm'を2.5倍に拡大して中央配置 -->
     <text 
-      x="195" 
-      y="360" 
-      font-family="sans-serif" 
-      font-size="160" 
-      font-weight="bold" 
+      x="170" 
+      y="370" 
+      font-family="Arial, sans-serif" 
+      font-size="180" 
+      font-weight="900" 
       fill="currentColor" 
       stroke="none"
-      style="letter-spacing: -5px;"
+      style="letter-spacing: -8px;"
     >rm</text>
   </g>
 </svg>
