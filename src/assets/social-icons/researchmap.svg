@@ -1,9 +1,21 @@
 <svg xmlns="http://www.w3.org" width="640" height="640" viewBox="0 0 640 640">
-  <g fill="none" stroke="currentColor" stroke-width="45" stroke-linecap="round" stroke-linejoin="round">
-    <!-- (1) Open play symbol (3) Shorter vertical edge, elongated horizontally -->
-    <path d="M180 140 L520 320 L180 500 Z" />
+  <g fill="none" stroke="currentColor" stroke-width="50" stroke-linecap="round" stroke-linejoin="round">
+    <!-- 
+      (1) Further horizontal elongation 
+      (2) 6-vertex clipping for extreme rounding 
+    -->
+    <path d="M160 180 L160 160 L180 160 L540 310 L540 330 L180 480 L160 480 L160 460 Z" />
     
-    <!-- (4) Lowercase 'rm' placed just inside the triangle's path -->
-    <text x="210" y="345" font-family="sans-serif" font-size="90" font-weight="bold" fill="currentColor" stroke="none">rm</text>
+    <!-- (3) Larger 'rm' (scaled up 2.5x) -->
+    <text 
+      x="195" 
+      y="360" 
+      font-family="sans-serif" 
+      font-size="160" 
+      font-weight="bold" 
+      fill="currentColor" 
+      stroke="none"
+      style="letter-spacing: -5px;"
+    >rm</text>
   </g>
 </svg>
