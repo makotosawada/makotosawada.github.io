@@ -1,16 +1,15 @@
 <svg xmlns="http://www.w3.org" width="640" height="640" viewBox="0 0 640 640">
   <g fill="none" stroke="currentColor" stroke-width="40" stroke-linecap="round" stroke-linejoin="round">
+    
     <!-- Outer boundary (optional, if you want a box) -->
-    <!-- <rect x="80" y="80" width="480" height="480" rx="64"></rect> -->
-    
-    <!-- Open Play Symbol (Triangle) -->
-    <path d="M220 180 L420 320 L220 460 Z" fill="none" stroke="currentColor" stroke-width="45"></path>
-    
-    <!-- Letters "RM" -->
-    <!-- R -->
-    <path d="M440 200v240M440 320h-80M360 200v240" fill="none" stroke="currentColor" stroke-width="40" stroke-linecap="round" stroke-linejoin="round"/>
-    <!-- M -->
-    <path d="M300 200v240m0-240l-60 120m0-120l-60 120v120" fill="none" stroke="currentColor" stroke-width="40" stroke-linecap="round" stroke-linejoin="round"/>
-    
+    <!-- <rect x="80" y="80" width="480" height="480" rx="60"></rect> -->
+
+    <!-- Large Rounded Play Symbol (Triangle) -->
+    <path d="M220 160 L460 320 L220 480 Z" fill="currentColor" stroke-width="0"/>
+
+    <!-- Letters "rm" in the center -->
+    <!-- Using a simpler font style for SVG compatibility -->
+    <text x="260" y="370" font-family="sans-serif" font-size="120" font-weight="bold" fill="#FFF" stroke="none">rm</text>
+
   </g>
 </svg>
