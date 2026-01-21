@@ -1,9 +1,6 @@
 <svg xmlns="http://www.w3.org" width="640" height="640" viewBox="0 0 640 640">
   <g fill="none" stroke="currentColor" stroke-width="45" stroke-linecap="round" stroke-linejoin="round">
-    <!-- 
-      (1) 極限の水平延伸
-      (2) 6頂点ベジェ曲線による深い丸み
-    -->
+    <!-- 1/5曲率と延伸を維持したベースライン -->
     <path d="
       M 130,190 
       L 130,450 
@@ -15,10 +12,10 @@
       Q 130,120 130,170 
       Z" />
     
-    <!-- (3) 'rm'をさらに1.25倍拡大 (225px) / 左下基準で配置 -->
+    <!-- 文字の中央を y=315（三角形の垂直中心）に合わせるための調整 -->
     <text 
       x="155" 
-      y="410" 
+      y="385" 
       font-family="Arial, sans-serif" 
       font-size="225" 
       font-weight="900" 
