@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org" width="640" height="640" viewBox="0 0 640 640">
   <g fill="none" stroke="currentColor" stroke-width="45" stroke-linecap="round" stroke-linejoin="round">
     <!-- 
-      (1) 水平方向へのさらなる延伸 (x=130 to 580)
-      (2) 各頂点をカットし、ベジェ曲線(Q)で1/5曲率を再現
+      (1) 極限の水平延伸
+      (2) 6頂点ベジェ曲線による深い丸み
     -->
     <path d="
       M 130,190 
@@ -15,16 +15,16 @@
       Q 130,120 130,170 
       Z" />
     
-    <!-- (3) 小文字'rm'を2.5倍に拡大して中央配置 -->
+    <!-- (3) 'rm'をさらに1.25倍拡大 (225px) / 左下基準で配置 -->
     <text 
-      x="170" 
-      y="370" 
+      x="155" 
+      y="410" 
       font-family="Arial, sans-serif" 
-      font-size="180" 
+      font-size="225" 
       font-weight="900" 
       fill="currentColor" 
       stroke="none"
-      style="letter-spacing: -8px;"
+      style="letter-spacing: -12px;"
     >rm</text>
   </g>
 </svg>
