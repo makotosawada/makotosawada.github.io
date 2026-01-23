@@ -5,8 +5,10 @@ import { trimExcerpt } from '@/lib/utils'
 import { template } from '@/settings'
 import { getCollection } from 'astro:content'
 
-export async function getStaticPaths({ paginate }): Promise<Astro.getStaticPathsResult> {
-    const blogEntries = await getCollection("blog");
+    const blogEntries = await getCollection("blog", ({ data }) => {
+        // Only include posts where draft is NOT true
+        return data.draft !== true;
+    });
 
     const posts = blogEntries
         .map(post => ({
