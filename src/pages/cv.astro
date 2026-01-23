@@ -1,6 +1,8 @@
 ---
 import Layout from '@/layouts/Layout.astro'
-import { experiences, education, skills, publications } from '../data/cv'
+import { experiences, education, skills } from '../data/cv'
+import { papers } from '../data/papers';
+import { proceedings } from '../data/proceedings';
 import CvTimeline from '@/components/ui/CvTimeline.astro'
 
 import type { Experience, Education, Publication } from '../types/cv'
@@ -38,8 +40,14 @@ if (education.length > 0) {
 	})
 }
 
-if (publications.length > 0) {
-	orderedPublications = publications.sort((a, b) => {
+if (papers.length > 0) {
+	orderedPapers = papers.sort((a, b) => {
+		return orderElement(a, b)
+	})
+}
+
+if (proceedings.length > 0) {
+	orderedProceedings = proceedings.sort((a, b) => {
 		return orderElement(a, b)
 	})
 }
@@ -69,12 +77,19 @@ if (publications.length > 0) {
 	}
 
 	{
-		orderedPublications.length > 0 && (
+		orderedPapers.length > 0 && (
 			<section class='mb-12'>
 				<h2 class='text-2xl font-bold mb-6 border-b pb-2'>
 					Last publications
 				</h2>
-				<PublicationsList elements={orderedPublications}/>
+				<h3 class='text-2xl font-bold mb-6 border-b pb-2'>
+					Refereed papers
+				</h3>
+				<PapersList elements={orderedPapers}/>
+				<h3 class='text-2xl font-bold mb-6 border-b pb-2'>
+					Conference proceedings
+				</h3>
+				<ProceedingsList elements={orderedProceedings}/>
 			</section>
 		)
 	}
