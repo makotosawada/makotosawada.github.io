@@ -13,11 +13,13 @@ export const profile = {
     },
 	{ 
       title: 'Observations of Non-Equilibrium Plasma', 
+	  role: 'XRISM W49B Target Team Lead',
       description: '.', 
       field: 'observation' 
     },
     { 
       title: 'Laboratory Astrophysics', 
+	  role: 'Science PI, NASA ROSES APRA',
       description: 'Providing the rigorous physical basis that transforms flashy science headlines into validated, enduring breakthroughs.', 
       field: 'labastro' 
     },
