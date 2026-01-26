@@ -12,9 +12,10 @@ export const profile = {
       field: 'instrumentation' 
     },
 	{ 
-      title: 'Observations of Non-Equilibrium Plasma', 
+      title: 'Astrophysical Observations and Discovery', 
 	  role: 'Target Team Lead (W49B), XRISM Collaboration',
-      description: '.', 
+	  summary: 'Transforming subtle data signatures into robust astrophysical discovery.',
+      description: 'I leverage the unprecedented spectral resolution of the microcalorimeter spectrometer Resolve on XRISM to uncover hidden astrophysical features in hot, collisional, highly non-equilibrium plasma. In this era of precision science, breakthroughs often reside in subtle spectral signatures. I apply my expertise in detector response and systematic uncertainty in atomic codes to rigoroysly distinguish unexpected physical phenomena, transforming serendipitous finidings into validated discoveries.', 
       field: 'observation' 
     },
     { 
