@@ -6,6 +6,7 @@ export const profile = {
     research_areas: [
     { 
       title: 'Instrumentation and Calibration', 
+	  role: 'In-Flight Calibration Co-Lead',
 	  summary: 'Securing mission success through rigorous detector science.',
       description: 'I ensure the success of the Resolve high-resolution spectrometer on XRISM by resolving systemic vulnerabilities through rigorous detector science. This expertise was demonstrated by identifying a conceptual misalignment in the design of the onboard calibration sources (MXS) for in-orbit gain tracking, and subsequently redefining the operational strategies to match the microcalorimeter event processing before the launch of XRISM. While the MXS is currently sidelined due to the gate-valve closed configuration, the alternative operational pattern I developed has enabled the full performance of Resolve through gain tracking using the filter wheel radioactive sources, securing the scientific foundation of the mission.',
       field: 'instrumentation' 
