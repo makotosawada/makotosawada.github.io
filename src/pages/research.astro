@@ -5,10 +5,10 @@ import BetterIcon from "@/components/ui/BetterIcon.astro";
 import List from "@/components/ui/List.astro";
 import {RESEARCH_ICONS} from "@/data/researchIcons";
 
-const { research_areas } = profile;
+const { fullName, title, institute, research_areas } = profile
 ---
 
-<Layout title="Research | Dr. Marie Curie">
+<Layout title="Research | Dr. {fullName}">
   <div class="prose max-w-none">
     <h1 class="text-3xl font-bold mb-8">Research Statement</h1>
 
@@ -21,7 +21,7 @@ const { research_areas } = profile;
       </p>
     </div>
 
-    <h2 class="text-2xl font-bold mb-6">Research Areas</h2>
+    <h2 class="text-2xl font-bold mb-6">Strategic Research Pillars</h2>
     <div class="grid gap-8 mb-12">
       {
         research_areas.map((area) => (
@@ -50,7 +50,7 @@ const { research_areas } = profile;
       }
     </div>
 
-    <List listTitle="Current Projects" listItems={[
+    <List listTitle="Research Milestones" listItems={[
       {
         title: "XRISM observations of supernova remnants with non-equilbrium plasma",
         description: ""
