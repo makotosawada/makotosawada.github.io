@@ -10,16 +10,16 @@ const {fullName, title, institute, profilePicture} = Astro.props
   <h1 class='text-4xl font-bold mb-4'>
     Welcome! I'm <span class='text-secondary'>{fullName}</span>
   </h1>
-  <p class='text-xl text-gray-600 mb-6'>
+  <p class='text-xl opacity-70 mb-6'>
     {title}{institute ? ` at ${institute}` : ''}
   </p>
 
   <div class='max-w-3xl'>
-    <p class='text-2xl italic text-gray-800 mb-8'>
+    <p class='text-2xl italic opacity-90 mb-8'>
       &ldquo;Rigor, Insights, and Perseverance&rdquo;
     </p>
     
-    <ul class='space-y-4 mb-8 text-lg text-gray-700 list-none'>
+    <ul class='space-y-4 mb-8 text-lg opacity-80 list-none'>
       <li class='flex items-start'>
         <span class='mr-3'>•</span>
         <span>True astrophysics resides not in flashy science headlines alone, but in the rigorous synthesis of the instrumentation, calibration, and laboratory experiments that make such breakthroughs possible.</span>
