@@ -19,8 +19,9 @@ export const profile = {
       field: 'observation' 
     },
     { 
-      title: 'Laboratory Astrophysics', 
+      title: 'Laboratory Astrophysics for New Spectral Features', 
 	  role: 'Science PI, NASA ROSES APRA',
+	  summary: 'Establishing the physical groundwork required to interpret novel signatures in high-resolution spectra.',
       description: '.', 
       field: 'labastro' 
     },
