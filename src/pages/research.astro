@@ -29,12 +29,12 @@ const imageMap = Object.fromEntries(
     <div class="grid gap-8 mb-12">
       {
         research_areas.map((area) => (
-          <div class="flex gap-6 items-start">
+　　　     <div class="flex flex-col md:flex-row gap-6 items-center md:items-start">
           {imageMap[area.field] && (
             <img 
               src={imageMap[area.field].src} 
               alt={area.title} 
-              class="size-40 rounded-lg flex-shrink-0 object-cover shadow-sm" 
+　            class="size-40 rounded-lg flex-shrink-0 object-cover shadow-sm" 
             />
           )}
             <div>
