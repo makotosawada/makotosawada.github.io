@@ -21,7 +21,7 @@ export const profile = {
     { 
       title: 'Laboratory Astrophysics', 
 	  role: 'Science PI, NASA ROSES APRA',
-      description: 'Providing the rigorous physical basis that transforms flashy science headlines into validated, enduring breakthroughs.', 
+      description: '.', 
       field: 'labastro' 
     },
     ],
