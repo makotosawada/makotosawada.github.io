@@ -7,11 +7,11 @@ import SocialIcons from './SocialIcons.astro'
 const {fullName, title, institute, profilePicture} = Astro.props
 ---
 <div class='flex-1'>
-  <h1 class='text-4xl font-bold mb-2'>
-    {fullName}
+  <h1 class='text-4xl font-bold mb-4'>
+    Welcome! I'm <span class='text-secondary'>{fullName}</span>
   </h1>
-  <p class='text-xl text-secondary font-medium mb-6'>
-    {title}{institute ? ` @ ${institute}` : ''}
+  <p class='text-xl text-gray-600 mb-6'>
+    {title}{institute ? ` at ${institute}` : ''}
   </p>
 
   <div class='max-w-3xl'>
