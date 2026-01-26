@@ -22,7 +22,7 @@ export const profile = {
       title: 'Laboratory Astrophysics for New Spectral Features', 
 	  role: 'Science PI, NASA ROSES APRA',
 	  summary: 'Establishing the physical groundwork required to interpret novel signatures in high-resolution spectra.',
-      description: '.', 
+      description: 'I lead a laboratory astrophysics program to focus on identifying spectral features that originate from new astrophysical phenomena. Based on my original idea, I successfully principle-proven a novel method to experimentally simulate emission from non-equilibrium plasma such as non-Maxwellian electrons and overionized/recombining ions. Utilizing Electron Beam Ion Trap (EBIT) facilities through collaborations with LLNL and NASA/GSFC, this work provides the robust physical integrity necessary to distinguish new astrophysical discoveries from theoretical uncertainties. Supported by a NASA ROSES APRA grant, for which I serve as Science PI, this foundational research ensures that the unprecedented resolution of ongoing XRISM/Resolve and future NewAthena/X-IFU spectrometers is fully translated into validated scientific breakthroughs.', 
       field: 'labastro' 
     },
     ],
