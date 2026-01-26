@@ -17,9 +17,9 @@ const {gridTitle, gridItems} = Astro.props;
     <div class="p-6 rounded-lg text-base-content bg-base-200">
       <h3 class="text-xl font-semibold mb-3">{item.title}</h3>
       {item.summary && (
-        <p class="text-base font-bold mb-2 leading-snug opacity-80">{item.summary}</p>
+        <p class="text-base font-bold mb-2 leading-snug opacity-80 font-serif">{item.summary}</p>
       )}
-      <p class="text-base leading-relaxed">{item.description}</p>
+      <p class="text-base leading-relaxed font-serif">{item.description}</p>
     </div>
   ))
   }
