@@ -17,7 +17,7 @@ export const profile = {
     { 
       title: 'Laboratory Astrophysics', 
       description: 'Providing the rigorous physical basis that transforms flashy science headlines into validated, enduring breakthroughs.', 
-      field: 'laboratory' 
+      field: 'labastro' 
     },
     ],
 }
