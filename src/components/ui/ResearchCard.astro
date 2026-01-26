@@ -1,0 +1,11 @@
+---
+// src/components/ResearchCard.astro
+const { title, intervention, description } = Astro.props;
+---
+<div class="p-6 border border-gray-200 rounded-lg hover:border-secondary transition-colors">
+  <h3 class="text-xl font-bold mb-2 text-gray-800">{title}</h3>
+  <p class="text-sm font-medium text-secondary mb-3 uppercase tracking-wider italic">
+    Critical Intervention: {intervention}
+  </p>
+  <p class="text-gray-600 text-md leading-relaxed">{description}</p>
+</div>
