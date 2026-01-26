@@ -11,8 +11,8 @@ import PublicationsList from '@/components/ui/PublicationsList.astro'
 
 let orderedExperiences: Experience[] = []
 let orderedEducations: Education[] = []
-let orderedPapers: Papers[] = []
-let orderedProceedings: Proceedings[] = []
+let orderedPapers: Publication[] = []
+let orderedProceedings: Publication[] = []
 
 const orderElement = <T extends { time: string }>(a: T, b: T) => {
   const presentValues = ['present', 'now', 'current', 'today']
