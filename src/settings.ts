@@ -15,7 +15,7 @@ export const profile = {
       title: 'Astrophysical Observations and Discovery', 
 	  role: 'Target Team Lead (W49B), XRISM Collaboration',
 	  summary: 'Transforming subtle data signatures into robust astrophysical discovery.',
-      description: 'I leverage the unprecedented spectral resolution of the microcalorimeter spectrometer Resolve on XRISM to uncover hidden astrophysical features in hot, collisional, highly non-equilibrium plasma. In this era of precision science, breakthroughs often reside in subtle spectral signatures. I apply my expertise in detector response and systematic uncertainty in atomic codes to rigoroysly distinguish unexpected physical phenomena, transforming serendipitous finidings into validated discoveries.', 
+      description: 'I leverage the unprecedented spectral resolution of the microcalorimeter spectrometer Resolve on XRISM to uncover hidden astrophysical features in hot, collisional, highly non-equilibrium plasma. In this era of precision science, breakthroughs often reside in subtle spectral signatures. I apply my expertise in detector response and systematic uncertainty in atomic codes to rigoroysly distinguish unexpected physical phenomena, transforming serendipitous finidings into validated discoveries. This approach is exemplified by my recent discovery of kinematic evidence for unique, bipolar ejecta flows in the supernova remnant W49B.', 
       field: 'observation' 
     },
     { 
