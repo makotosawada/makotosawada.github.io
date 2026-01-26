@@ -6,6 +6,13 @@ import List from "@/components/ui/List.astro";
 import {RESEARCH_ICONS} from "@/data/researchIcons";
 
 const { fullName, title, institute, research_areas } = profile
+const allImages = import.meta.glob<{ default: ImageMetadata }>('/src/assets/images/*.{png,jpg,jpeg,webp}', { eager: true });
+const imageMap = Object.fromEntries(
+  Object.entries(allImages).map(([path, module]) => [
+    path.split('/').pop()?.split('.')[0], // ファイル名（拡張子なし）をキーにする
+    module.default
+  ])
+);
 ---
 
 <Layout title=`Research | ${fullName}`>
