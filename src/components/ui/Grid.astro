@@ -16,10 +16,11 @@ const {gridTitle, gridItems} = Astro.props;
   {gridItems.map((item) => (
     <div class="p-6 rounded-lg text-base-content bg-base-200">
       <h3 class="text-xl font-semibold mb-3">{item.title}</h3>
-      {summary && (
-        <p class="text-lg font-bold mb-2 leading-snug">{summary}</p>
+      {item.summary && (
+        <p class="text-lg font-bold mb-2 leading-snug">{item.summary}</p>
       )}
-      <p>{item.description}</p>
+      <p class="text-base leading-relaxed opacity-80">{item.description}</p>
     </div>
-  ))}
+  ))
+  }
 </div>
