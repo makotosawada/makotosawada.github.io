@@ -23,6 +23,13 @@ const { fullName, title, institute, research_areas } = profile
       {
         research_areas.map((area) => (
           <div class="flex gap-6 items-start">
+          {item.image && (
+            <img 
+              src={item.image} 
+              alt={item.title} 
+              class="size-24 rounded-lg object-cover shadow-md mb-4" 
+            />
+          )}
             <div>
               <h3 class="text-xl font-semibold mb-2">{area.title}</h3>
               <p class="text-sm">{area.description}</p>
