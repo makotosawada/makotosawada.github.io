@@ -8,10 +8,10 @@ import {RESEARCH_ICONS} from "@/data/researchIcons";
 const { fullName, title, institute, research_areas } = profile
 const allImages = import.meta.glob<{ default: ImageMetadata }>('/src/assets/images/*.{png,jpg,jpeg,webp}', { eager: true });
 const imageMap = Object.fromEntries(
-  Object.entries(allImages).map(([path, module]) => [
-    path.split('/').pop()?.split('.')[0], // ファイル名（拡張子なし）をキーにする
-    module.default
-  ])
+  Object.entries(allImages).map(([path, module]) => {
+    const fileName = path.split('/').pop()?.replace(/\.[^/.]+$/, "");
+    return [fileName, module.default];
+  })
 );
 ---
 
@@ -30,11 +30,11 @@ const imageMap = Object.fromEntries(
       {
         research_areas.map((area) => (
           <div class="flex gap-6 items-start">
-          {item.image && (
+          {imageMap[area.field] && (
             <img 
-              src={item.image} 
-              alt={item.title} 
-              class="size-24 rounded-lg object-cover shadow-md mb-4" 
+              src={imageMap[area.field].src} 
+              alt={area.title} 
+              class="size-24 rounded-lg flex-shrink-0 object-cover shadow-sm" 
             />
           )}
             <div>
