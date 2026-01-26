@@ -5,20 +5,12 @@ export const profile = {
 	author_name: 'Makoto Sawada', // Author name to be highlighted in the papers section
     research_areas: [
     { 
-      title: 'Instrumentation & Calibration', 
+      title: 'Instrumentation and Calibration', 
       description: 'Established regorous calibration methods for microcalorimeter high-resolutoin spectrometers. Identified critical design oversights of onboard calibration X-ray sources and resolved them by improving operational strategies prior to launch, ', 
       field: 'instrumentation' 
     },
-    { 
-      title: 'Systematic Risk Mitigation & Mission Recovery', 
-      field: 'mission-integrity',
-      description: 'Ensuring scientific success by identifying systemic vulnerabilities and developing multi-layered contingencies.\n\n' +
-        '• Design Correction & Backup Synthesis: Resolved critical flaws in Instrument A; developed Methodology D which ultimately secured Instrument C’s full performance after Component B’s failure.\n' +
-        '• Pre-launch Systematic Audit: Identified undetected architectural inconsistencies and implemented emergency software patches to safeguard observation integrity.\n' +
-        '• Post-launch Anomalous Resolution: Bridged the gap between instrumentation and observation to recover data from hardware anomalies.'
-    },
 	{ 
-      title: 'X-ray Spectroscopy of Non-Equilibrium Plasma', 
+      title: 'Observations of Non-Equilibrium Plasma', 
       description: '.', 
       field: 'observation' 
     },
