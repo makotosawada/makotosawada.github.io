@@ -2,14 +2,24 @@
 import Layout from '@/layouts/Layout.astro'
 import { profile } from "@/settings";
 const { fullName, title, institute, research_areas } = profile
+import { getCollection } from 'astro:content';
+const allSections = await getCollection('teaching');
+const sortedSections = allSections.sort((a, b) => a.data.order - b.data.order);
 ---
 
 <Layout title=`Teaching & Lab | ${fullName}`>
   <div class="prose max-w-none">
     <h1 class="text-3xl font-bold mb-8">Teaching & Lab</h1>
 
-    <div class="mb-12">
-      <p class="text-lg mb-6">
-      あ
-      </p>
-    </div>
+  {sortedSections.map(async (section) => {
+    const { Content } = await section.render();
+    return (
+      <div class="grid ... mb-12">
+        <h2 class="text-primary">{section.data.title}</h2>
+        <div class="prose">
+          <Content />
+        </div>
+      </div>
+    );
+  })}
+</div>
