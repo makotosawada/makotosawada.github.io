@@ -18,5 +18,15 @@ const blog = defineCollection({
         draft: z.boolean().optional(),
     }),
 });
+
+const teaching = defineCollection({
+  type: 'content',
+  schema: z.object({
+    title: z.string(),
+    order: z.number(),
+    tag: z.string(),
+  }),
+});
+
 // 4. Export a single `collections` object to register your collection(s)
 export const collections = { blog };
