@@ -24,9 +24,12 @@ const teaching = defineCollection({
   schema: z.object({
     title: z.string(),
     order: z.number(),
-    tag: z.string(),
+    tag: z.string().optional(),
   }),
 });
 
 // 4. Export a single `collections` object to register your collection(s)
-export const collections = { blog };
+export const collections = {
+    blog,
+    teaching
+};
