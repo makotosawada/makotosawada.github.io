@@ -1,7 +1,7 @@
 ---
 title: "ごあいさつ"
 order: 1
-tag: "Greeting"
+tag: "Welcome"
 ---
 
 ### 自己紹介
